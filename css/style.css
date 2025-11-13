@@ -24,6 +24,20 @@ body{
     text-align: center;
 }
 
+.history-header{
+    background-color: #9b0829;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.history-footer{
+    background-color: #9b0829;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 /* Multi-column layout */
 .main-layout{
     display: grid;
@@ -32,6 +46,27 @@ body{
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.history-intro{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.history-milestones article{
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #9b0829;
+}
+
+.history-milestones h4{
+    color: #333;
+    font-size: 1.3em;
 }
 
 /* Main nav */
@@ -113,6 +148,20 @@ img{
     border-radius: 5px;
 }
 
+.history-intro img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.person-portrait{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #eee;
+}
+
 /* Gallery grid */
 .gallery-grid{
     display: grid;
@@ -141,3 +190,28 @@ img{
     font-size: 0.9em;
 }
 
+/* Grid people */
+.people-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.person-card{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.person-card h4{
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.person-card p{
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
