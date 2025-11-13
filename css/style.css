@@ -1,0 +1,143 @@
+/* Generic styles */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header and footer (all pages) */
+.main-header{
+    background-color: #333;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    background-image: url("/img/viñedos.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-footer{
+    background-color: #afbd60;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Multi-column layout */
+.main-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main nav */
+.global-nav{
+    background-color: #ececec;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.global-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.global-nav li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.global-nav li a:hover{
+    background-color: #ddd;
+}
+
+/* Main content */
+.main-content{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.text-intro{
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.photo-gallery{
+    padding-top: 20px;
+}
+
+.photo-gallery h3{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Images */
+#logo{
+    height: 50px;
+    width: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero img{
+    border-radius: 5px;
+}
+
+/* Gallery grid */
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid figure{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.gallery-grid figure img{
+    display: block;
+}
+
+.gallery-grid figcaption{
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    font-size: 0.9em;
+}
+
