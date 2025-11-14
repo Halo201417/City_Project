@@ -38,6 +38,20 @@ body{
     text-align: center;
 }
 
+.places-header{
+    background-color: #5B97D0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.places-footer{
+    background-color: #5B97D0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 /* Multi-column layout */
 .main-layout{
     display: grid;
@@ -133,6 +147,39 @@ body{
     margin-bottom: 20px;
 }
 
+.page-intro{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-intro h2{
+    font-size: 2.5em;
+    color:#333;
+}
+
+.page-intro p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.place-card-content{
+    padding: 20px;
+}
+
+.place-card-content h4{
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.place-card-content p{
+    margin: 0;
+    line-height: 1.5;
+    color: #555;
+}
+
 /* Images */
 #logo{
     height: 50px;
@@ -160,6 +207,13 @@ img{
     object-fit: cover;
     margin-bottom: 15px;
     border: 3px solid #eee;
+}
+
+.place-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
 /* Gallery grid */
@@ -215,3 +269,19 @@ img{
     font-size: 0.9em;
     color: #555;
 }
+
+/* Grid places */
+.places-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.place-card{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
