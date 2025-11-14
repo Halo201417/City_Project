@@ -345,3 +345,31 @@ img{
 .page-services .service-card-content h3{
     color: #d98c00;
 }
+
+.page-events .main-header{
+    background-color: #931b89;
+    background-image: none;
+}
+
+.page-events .main-footer{
+    background-color: #931b89;
+}
+
+.page-events .page-intro h2{
+    color: #931b89;
+}
+
+/* Google calendar style */
+.calendar-embed{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.calendar-embed iframe{
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
