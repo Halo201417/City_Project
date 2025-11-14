@@ -24,34 +24,6 @@ body{
     text-align: center;
 }
 
-.history-header{
-    background-color: #9b0829;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.history-footer{
-    background-color: #9b0829;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.places-header{
-    background-color: #5B97D0;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.places-footer{
-    background-color: #5B97D0;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
 /* Multi-column layout */
 .main-layout{
     display: grid;
@@ -81,6 +53,28 @@ body{
 .history-milestones h4{
     color: #333;
     font-size: 1.3em;
+}
+
+.services-layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.service-category h3{
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.service-card{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Main nav */
@@ -180,6 +174,22 @@ body{
     color: #555;
 }
 
+.service-card-content{
+    padding: 20px;
+}
+
+.service-card-content h4{
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.service-card-content p{
+    margin: 0;
+    line-height: 1.5;
+    color: #555;
+}
+
 /* Images */
 #logo{
     height: 50px;
@@ -212,6 +222,13 @@ img{
 .place-card img{
     width: 100%;
     height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card img{
+    width: 100%;
+    height: 200px;
     object-fit: cover;
     display: block;
 }
@@ -285,3 +302,46 @@ img{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* Moodboard for the pages */
+.page-history .main-header{
+    background-color: #9b0829;
+    background-image: none;
+}
+
+.page-history .main-footer{
+    background-color: #9b0829;
+}
+
+.page-history .history-milestones article{
+    border-left: 3px solid #9b0829;
+}
+
+.page-places .main-header{
+    background-color: #5b97d0;
+    background-image: none;
+}
+
+.page-places .main-footer{
+    background-color: #5b97d0;
+}
+
+.page-places .place-card-content h4{
+    color: #5b97d0;
+}
+
+.page-services .main-header{
+    background-color: #d98c00;
+    background-image: none;
+}
+
+.page-services .main-footer{
+    background-color: #d98c00;
+}
+
+.page-services .service-card-content h4{
+    color: #d98c00;
+}
+
+.page-services .service-card-content h3{
+    color: #d98c00;
+}
