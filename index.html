@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valladolid - Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -38,15 +39,21 @@
 
                 <div class="gallery-grid">
                     <figure>
-                        <img src="/img/cathedral.jpeg" alt="Cathedral of Valladolid">
+                        <a href="/img/cathedral.jpeg" class="glightbox" data-gallery="home">
+                            <img src="/img/cathedral.jpeg" alt="Cathedral of Valladolid">
+                        </a>
                         <figcaption>Cathedral of Our Lady of the Assumption</figcaption>
                     </figure>
                     <figure>
-                        <img src="/img/campo_grande.jpeg" alt="Campo grande Park">
+                        <a href="/img/campo_grande.jpeg" class="glightbox" data-gallery="home">
+                            <img src="/img/campo_grande.jpeg" alt="Campo grande Park">
+                        </a>
                         <figcaption>Campo grande Park</figcaption>
                     </figure>
                     <figure>
-                        <img src="/img/lechazo.png" alt="Valladolid's Gastronomy">
+                        <a href="/img/lechazo.png" class="glightbox" data-gallery="home">
+                            <img src="/img/lechazo.png" alt="Valladolid's Gastronomy">
+                        </a>
                         <figcaption>Gastronomy and Tapas</figcaption>
                     </figure>
                 </div>
@@ -57,5 +64,9 @@
     <footer class="main-footer">
         <p>&copy; 2025 Team xmoranj00. All rights reserved</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <script src="/js/script.js"></script>
 </body>
 </html>
