@@ -67,4 +67,21 @@ document.addEventListener('DOMContentLoaded', (event) =>{
             }, 1000);
         });
     }
+
+    /* Toggle menu */
+    const menuToggleBtn = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.global-nav ul');
+
+    if(menuToggleBtn && navList){
+        menuToggleBtn.addEventListener('click', () => {
+            navList.classList.toggle('show-menu');
+
+            if(navList.classList.contains('show-menu')){
+                menuToggleBtn.innerHTML = '✕ Close';
+            }
+            else{
+                menuToggleBtn.innerHTML = '☰ Menu';
+            }
+        });
+    }
 });
