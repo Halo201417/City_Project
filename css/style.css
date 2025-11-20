@@ -327,8 +327,10 @@ img{
 
 /* Moodboard for the pages */
 .page-history .main-header{
-    background-color: #9b0829;
-    background-image: none;
+    background-image: linear-gradient(rgba(155,8,41, 0.43), rgba(155,8,41, 0.43)), url(../img/header-history.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .page-history .main-footer{
