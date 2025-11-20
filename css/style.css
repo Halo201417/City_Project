@@ -399,6 +399,23 @@ img{
     border-bottom-color: #008080;
 }
 
+.page-mobility .main-header{
+    background-color: #862d1e;
+    background-image: none;
+}
+
+.page-mobility .main-footer{
+    background-color: #862d1e;
+}
+
+.page-mobility .page-intro h2{
+    color: #862d1e;
+}
+
+.page-mobility .service-category h3{
+    border-bottom-color: #862d1e;
+}
+
 /* Google calendar style */
 .calendar-embed{
     text-align: center;
