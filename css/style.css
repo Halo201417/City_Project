@@ -673,14 +673,21 @@ body.dark-mode .event-list h3 {
     border-bottom-color: #444;
 }
 
-body.dark-mode .global-nav ul {
+body.dark-mode .global-nav {
     background-color: #2d2d2d;
 }
 
 body.dark-mode .global-nav li a {
-    color: #e0e0e0;
+    color: #ffffff;
+}
+
+body.dark-mode .global-nav li a.active {
+    background-color: #555555;
+    color: #ffffff;
+    border: 1px solid #777;
 }
 
 body.dark-mode .global-nav li a:hover {
-    background-color: #444;
+    background-color: #444444;
+    color: #ffffff;
 }
