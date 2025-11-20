@@ -621,4 +621,66 @@ img{
     .main-header h1{
         font-size: 1.5em;
     }
+
+    .dark-mode-btn{
+        float: right;
+        margin-top: 0;
+        border-color: white;
+        color: white;
+    }
+}
+
+/* Dark mode */
+.dark-mode-btn{
+    background: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode{
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .main-content, 
+body.dark-mode .service-card, 
+body.dark-mode .place-card, 
+body.dark-mode .person-card, 
+body.dark-mode .event-card,
+body.dark-mode .gallery-grid figure{
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode p, 
+body.dark-mode li,
+body.dark-mode address{
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .service-category h3,
+body.dark-mode .contact-info h3,
+body.dark-mode .event-list h3 {
+    border-bottom-color: #444;
+}
+
+body.dark-mode .global-nav ul {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .global-nav li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .global-nav li a:hover {
+    background-color: #444;
 }
