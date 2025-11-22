@@ -327,7 +327,7 @@ img{
 
 /* Moodboard for the pages */
 .page-history .main-header{
-    background-image: linear-gradient(rgba(155,8,41, 0.43), rgba(155,8,41, 0.43)), url(../img/header-history.jpg);
+    background-image: linear-gradient(rgba(155,8,41, 0.43), rgba(155,8,41, 0.43)), url(../img/header_history.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -342,8 +342,10 @@ img{
 }
 
 .page-places .main-header{
-    background-color: #5b97d0;
-    background-image: none;
+    background-image: linear-gradient(rgba(91,151,208,0.43), rgba(91,151,208,0.43)), url(../img/header_places.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .page-places .main-footer{
@@ -355,8 +357,10 @@ img{
 }
 
 .page-services .main-header{
-    background-color: #d98c00;
-    background-image: none;
+    background-image: linear-gradient(rgba(217,140,0,0.43), rgba(217,140,0,0.43)), url(../img/header_services.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .page-services .main-footer{
@@ -372,8 +376,10 @@ img{
 }
 
 .page-events .main-header{
-    background-color: #931b89;
-    background-image: none;
+    background-image: linear-gradient(rgba(147,27,137,0.43), rgba(147,27,137,0.43)), url(../img/header_events.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .page-events .main-footer{
@@ -385,8 +391,10 @@ img{
 }
 
 .page-contact .main-header{
-    background-color: #008080;
-    background-image: none;
+    background-image: linear-gradient(rgba(0,128,128,0.43), rgba(0,128,128,0.43)), url(../img/header_contact.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .page-contact .main-footer{
@@ -402,8 +410,7 @@ img{
 }
 
 .page-mobility .main-header{
-    background-color: #862d1e;
-    background-image: none;
+    background-image: linear-gradient(rgba(134,45,30,0.43), rgba(134,45,30,0.43)), url(../img/header_mobility.jpg);
 }
 
 .page-mobility .main-footer{
@@ -475,6 +482,28 @@ img{
     background-color: #555;
     color: #fff;
     font-weight: bold;
+}
+
+.services-layout .service-category:last-child:nth-child(odd){
+    grid-column: 1 / -1;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.places-grid .place-card:last-child:nth-child(odd){
+    grid-column: 1 / -1;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.people-grid .person-card:last-child:nth-child(odd){
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #backToTopBtn{
@@ -627,6 +656,19 @@ img{
         margin-top: 0;
         border-color: white;
         color: white;
+    }
+
+    body.dark-mode .global-nav ul{
+        background-color: #2d2d2d !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+
+    body.dark-mode .global-nav li a{
+        color: #e0e0e0;
+    }
+
+    body.dark-mode .global-nav li a:hover{
+        background-color: #333;
     }
 }
 
