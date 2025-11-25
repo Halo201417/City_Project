@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     
+    /* Gallery photos */
+
     const lightbox = GLightbox({
         loop: true,
         touchNavigation: true,
         descPosition: 'bottom'
     });
+
+    /* Button */
 
     const backToTopBtn = document.getElementById("backToTopBtn");
     if(backToTopBtn) {
@@ -31,6 +35,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
+    /* Toggle menu */
+
     const menuToggleBtn = document.querySelector('.menu-toggle');
     const navList = document.querySelector('.global-nav ul');
     if (menuToggleBtn && navList) {
@@ -43,6 +49,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         });
     }
+
+    /* Dark mode */
 
     const darkModeBtn = document.getElementById('darkModeToggle');
     const body = document.body;
@@ -63,6 +71,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
+    /* Form */
 
     if (sessionStorage.getItem('formSubmitted') === 'true') {
         sessionStorage.removeItem('formSubmitted');
@@ -168,7 +177,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     messageSpan.style.display = "none";
                 }
             }
-            
+
             return isValid;
         }
         
