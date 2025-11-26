@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 darkModeBtn.innerText = '☀️';
             } else {
                 localStorage.setItem('darkMode', 'disabled');
-                darkModeBtn.innerText = '�';
+                darkModeBtn.innerText = '🌙';
             }
         });
     }
